@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: 'playground'
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
